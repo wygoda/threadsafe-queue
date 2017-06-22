@@ -1,0 +1,4 @@
+Założeniem było stworzenie jednokierunkowej kolejki bezpiecznej do używania przez wiele wątków jednocześnie.
+  - starałem się zminimalizować sekcje, w których zamykane są zamki
+  - umyślnie użyłem dwóch zamków zamiast jednego dla całej struktury. W przeciwnym wypadku niemożliwa byłaby praca funkcji push() jednocześnie z funkcją __str__() lub try_pop()
+  - linie 23 i 32 są tylko po to, żeby zobaczyć działanie kolejki w program.py. Należy je zakomentować jeżeli faktycznie chce się jej używać :)
